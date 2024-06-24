@@ -1,5 +1,2 @@
-## A Flutter application demonstrating the usage of traversal_slider and stylish_pull_to_refresh packages for image slider and pull-to-refresh functionalities.
-    Features
-    Multiple View Slider: Display multiple images with sliding animation.
-    Single View Slider: Display single images with sliding animation.
-    Pull-to-Refresh: Refresh content by pulling down the screen.
+## Welcome to My Packages repository.
+        This repository is a collection of various Flutter widgets and packages that have been collected and modified for ease of use. Each widget/package in this repository is designed to help Flutter developers speed up their development process with ready-to-use components.
