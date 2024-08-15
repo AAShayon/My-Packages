@@ -1,0 +1,34 @@
+import 'package:flutter/material.dart';
+
+class AdaptiveScreenExample extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // Get the current screen dimensions
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
+
+    // Define the base screen dimensions (reference size)
+    const baseHeight = 800.0;
+    const baseWidth = 420.0;
+
+    // Calculate adaptive height and width based on current screen size
+    double adaptiveHeight = (screenHeight / baseHeight); // Ratio for height
+    double adaptiveWidth = (screenWidth / baseWidth);    // Ratio for width
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Adaptive Screen Example'),
+      ),
+      body: Center(
+        child: SizedBox(
+          width: adaptiveWidth * 200,  // Example: a button width relative to screen width
+          height: adaptiveHeight * 50, // Example: a button height relative to screen height
+          child: ElevatedButton(
+            onPressed: () {},
+            child: const Text('Adaptive Button'),
+          ),
+        ),
+      ),
+    );
+  }
+}
